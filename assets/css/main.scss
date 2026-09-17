@@ -216,3 +216,110 @@ a:hover {
   }
 }
 
+
+
+
+/* ================================
+   Portfolio Images
+   ================================ */
+
+.work-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 18px;
+  display: block;
+}
+
+.work-card-text {
+  min-height: 220px;
+}
+
+.work-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: #7ca58a;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+}
+
+.work-card p {
+  color: #64766a;
+  line-height: 1.8;
+}
+
+
+/* ================================
+   Practice Cards
+   ================================ */
+
+.practice-card {
+  background: #ffffff;
+  border: 1px solid #dcecdf;
+  border-radius: 16px;
+  padding: 24px;
+  margin: 25px 0;
+  box-shadow: 0 4px 18px rgba(75, 110, 85, 0.06);
+}
+
+.practice-card img {
+  width: 100%;
+  max-height: 380px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+
+/* ================================
+   Game Memory
+   ================================ */
+
+.game-memory {
+  background: #ffffff;
+  border: 1px solid #dcecdf;
+  border-radius: 16px;
+  padding: 24px;
+  margin: 25px 0;
+  box-shadow: 0 4px 18px rgba(75, 110, 85, 0.06);
+}
+
+.game-memory img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+
+/* ================================
+   Coming Soon
+   ================================ */
+
+.coming-soon-page {
+  text-align: center;
+  padding: 40px 0;
+}
+
+
+/* ================================
+   Mobile
+   ================================ */
+
+@media (max-width: 800px) {
+
+  .work-card img {
+    height: auto;
+    max-height: none;
+  }
+
+  .practice-card img,
+  .game-memory img {
+    max-height: none;
+  }
+
+}
