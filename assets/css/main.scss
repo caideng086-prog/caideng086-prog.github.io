@@ -3,9 +3,6 @@
 
 /*
  * This file controls what is imported from /_sass
- *
- * Note that the files are processed in the order they are imported, so they are partly
-   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
  */
 
 @import
@@ -29,7 +26,7 @@
     "layout/navigation",
     "layout/footer",
     "syntax",
-  
+
     "layout/forms",
 
     "layout/page",
@@ -38,7 +35,8 @@
     "layout/json_cv"
 ;
 
- /* ================================
+
+/* ================================
    Zhao Cailing - Light Green Theme
    ================================ */
 
@@ -89,6 +87,11 @@ a:hover {
   color: #4d805f;
 }
 
+
+/* ================================
+   Cards
+   ================================ */
+
 .profile-highlights,
 .skill-grid,
 .work-preview-grid {
@@ -132,6 +135,11 @@ a:hover {
   margin-bottom: 8px;
 }
 
+
+/* ================================
+   Work Cards
+   ================================ */
+
 .work-card {
   display: block;
   text-decoration: none;
@@ -142,6 +150,37 @@ a:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 24px rgba(75, 110, 85, 0.12);
 }
+
+.work-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 18px;
+  display: block;
+}
+
+.work-card-text {
+  min-height: 220px;
+}
+
+.work-card p {
+  color: #64766a;
+  line-height: 1.8;
+}
+
+.work-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: #7ca58a;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+}
+
+
+/* ================================
+   Tags
+   ================================ */
 
 .tag-list {
   display: flex;
@@ -158,6 +197,11 @@ a:hover {
   font-size: 0.9rem;
 }
 
+
+/* ================================
+   Timeline
+   ================================ */
+
 .timeline-item {
   display: grid;
   grid-template-columns: 150px 1fr;
@@ -172,6 +216,11 @@ a:hover {
   letter-spacing: 0.08em;
 }
 
+
+/* ================================
+   Game Quote
+   ================================ */
+
 .game-quote {
   background: #edf7ef;
   border-left: 4px solid #8ab79a;
@@ -180,6 +229,11 @@ a:hover {
   color: #45634f;
   font-size: 1.05rem;
 }
+
+
+/* ================================
+   Contact
+   ================================ */
 
 .contact-panel {
   margin-top: 35px;
@@ -191,6 +245,11 @@ a:hover {
   gap: 30px;
 }
 
+
+/* ================================
+   Coming Soon
+   ================================ */
+
 .coming-soon {
   margin: 60px 0 20px;
   padding: 35px;
@@ -199,54 +258,9 @@ a:hover {
   text-align: center;
 }
 
-@media (max-width: 800px) {
-  .profile-highlights,
-  .skill-grid,
-  .work-preview-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .timeline-item {
-    grid-template-columns: 1fr;
-    gap: 8px;
-  }
-
-  .contact-panel {
-    flex-direction: column;
-  }
-}
-
-
-
-
-/* ================================
-   Portfolio Images
-   ================================ */
-
-.work-card img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 18px;
-  display: block;
-}
-
-.work-card-text {
-  min-height: 220px;
-}
-
-.work-link {
-  display: inline-block;
-  margin-top: 12px;
-  color: #7ca58a;
-  font-size: 0.75rem;
-  letter-spacing: 0.08em;
-}
-
-.work-card p {
-  color: #64766a;
-  line-height: 1.8;
+.coming-soon-page {
+  text-align: center;
+  padding: 40px 0;
 }
 
 
@@ -294,29 +308,6 @@ a:hover {
   margin-bottom: 20px;
   display: block;
 }
-
-
-/* ================================
-   Coming Soon
-   ================================ */
-
-.coming-soon-page {
-  text-align: center;
-  padding: 40px 0;
-}
-
-
-/* ================================
-   Mobile
-   ================================ */
-
-@media (max-width: 800px) {
-
-  .work-card img {
-    height: auto;
-    max-height: none;
-  }
-
 
 
 /* ================================
@@ -378,6 +369,53 @@ a:hover {
 
 
 /* ================================
+   Desktop / General
+   ================================ */
+
+@media (min-width: 801px) {
+
+  .game-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* ================================
+   Mobile
+   ================================ */
+
+@media (max-width: 800px) {
+
+  .profile-highlights,
+  .skill-grid,
+  .work-preview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-item {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .contact-panel {
+    flex-direction: column;
+  }
+
+  .work-card img {
+    height: auto;
+    max-height: none;
+  }
+
+  .practice-card img,
+  .game-memory img {
+    max-height: none;
+  }
+
+}
+
+
+/* ================================
    Game Page Mobile
    ================================ */
 
@@ -389,13 +427,6 @@ a:hover {
 
   .game-card.featured {
     grid-column: span 1;
-  }
-
-}
-
-  .practice-card img,
-  .game-memory img {
-    max-height: none;
   }
 
 }
