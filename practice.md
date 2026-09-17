@@ -11,22 +11,43 @@ author_profile: true
 <h2>社会实践</h2>
 
 <p class="hero-lead">
-记录参与过的志愿活动与社会实践。
+把一些认真参与过的时刻留在这里。
 </p>
 
 </div>
 
----
+<div class="practice-gallery">
 
-<div class="practice-card">
+  <figure class="practice-photo practice-photo-large">
+    <img src="/images/practice/event-01.png" alt="社会实践记录一">
+    <figcaption>
+      <span>01</span>
+      志愿服务
+    </figcaption>
+  </figure>
 
-<img src="/images/practice/event-01.png"
-     alt="社会实践">
+  <figure class="practice-photo">
+    <img src="/images/practice/event-02.png" alt="社会实践记录二">
+    <figcaption>
+      <span>02</span>
+      实践记录
+    </figcaption>
+  </figure>
 
-<h3>志愿活动</h3>
+  <figure class="practice-photo">
+    <img src="/images/practice/event-03.png" alt="社会实践记录三">
+    <figcaption>
+      <span>03</span>
+      活动瞬间
+    </figcaption>
+  </figure>
 
-<p>
-参与志愿服务与社会实践，在真实场景中积累经验。
-</p>
+  <figure class="practice-photo">
+    <img src="/images/practice/event-04.png" alt="社会实践记录四">
+    <figcaption>
+      <span>04</span>
+      一些片段
+    </figcaption>
+  </figure>
 
 </div>
