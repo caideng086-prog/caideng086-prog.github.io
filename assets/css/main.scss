@@ -317,6 +317,82 @@ a:hover {
     max-height: none;
   }
 
+
+
+/* ================================
+   Game Page
+   ================================ */
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  margin-top: 35px;
+}
+
+.game-card {
+  background: #ffffff;
+  border: 1px solid #dcecdf;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(75, 110, 85, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(75, 110, 85, 0.12);
+}
+
+.game-card.featured {
+  grid-column: span 2;
+}
+
+.game-card img {
+  width: 100%;
+  display: block;
+  max-height: 420px;
+  object-fit: cover;
+}
+
+.game-card-text {
+  padding: 22px 24px 25px;
+}
+
+.game-card-text span {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #7b9b83;
+}
+
+.game-card-text h3 {
+  margin: 8px 0 6px;
+  color: #45634d;
+}
+
+.game-card-text p {
+  margin: 0;
+  color: #718276;
+  line-height: 1.7;
+}
+
+
+/* ================================
+   Game Page Mobile
+   ================================ */
+
+@media screen and (max-width: 700px) {
+
+  .game-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .game-card.featured {
+    grid-column: span 1;
+  }
+
+}
+
   .practice-card img,
   .game-memory img {
     max-height: none;
