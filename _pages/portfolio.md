@@ -128,59 +128,6 @@ CONTENT · 02 →
 
 </div>
 
----
-
-## 03 · 活动策划与运营
-
-<div class="portfolio-section">
-
-<div class="work-preview-grid">
-
-<div class="work-card">
-
-<img src="/images/portfolio/wechat-11.png"
-     alt="活动策划与运营作品">
-
-<h3>活动策划与运营</h3>
-
-<p>
-记录活动策划、内容组织与传播运营相关实践。
-</p>
-
-<span class="work-link">
-EVENT PLANNING →
-</span>
-
-</div>
-
-
-<div class="work-card work-card-text">
-
-<span class="card-label">
-FROM IDEA TO ACTION
-</span>
-
-<h3>活动实践</h3>
-
-<p>
-关注活动目标、参与者需求与传播效果，
-尝试将内容策划与实际执行连接起来。
-</p>
-
-<p>
-在实践中观察用户反馈，并思考如何让活动内容
-更容易被看见、理解和参与。
-</p>
-
-<span class="work-link">
-OPERATION &amp; INSIGHT →
-</span>
-
-</div>
-
-</div>
-
-</div>
 
 ---
 
