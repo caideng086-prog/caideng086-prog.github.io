@@ -29,6 +29,183 @@
     "layout/navigation",
     "layout/footer",
     "syntax",
+   /* ================================
+   Zhao Cailing - Light Green Theme
+   ================================ */
+
+body {
+  background: #f7fbf7;
+}
+
+.page__content {
+  color: #34433a;
+}
+
+a {
+  color: #5f9475;
+}
+
+a:hover {
+  color: #3f7558;
+}
+
+.masthead {
+  background: #eef7f0;
+  border-bottom: 1px solid #dcecdf;
+}
+
+.sidebar {
+  background: #f3faf4;
+}
+
+.author__name {
+  color: #355642;
+}
+
+.author__bio {
+  color: #64766a;
+}
+
+.page__title {
+  color: #355642;
+}
+
+.page__content h2 {
+  color: #4d805f;
+  border-bottom: 2px solid #dcecdf;
+  padding-bottom: 8px;
+}
+
+.page__content h3 {
+  color: #4d805f;
+}
+
+.profile-highlights,
+.skill-grid,
+.work-preview-grid {
+  display: grid;
+  gap: 18px;
+  margin: 30px 0;
+}
+
+.profile-highlights {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.skill-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.work-preview-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.highlight-card,
+.skill-grid > div,
+.work-card {
+  background: #ffffff;
+  border: 1px solid #dcecdf;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 4px 18px rgba(75, 110, 85, 0.06);
+}
+
+.highlight-card strong,
+.work-card h3 {
+  color: #3f7558;
+}
+
+.card-label {
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  color: #7ca58a;
+  margin-bottom: 8px;
+}
+
+.work-card {
+  display: block;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.work-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(75, 110, 85, 0.12);
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 24px 0;
+}
+
+.tag-list span {
+  background: #eaf5ed;
+  color: #4d805f;
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 25px;
+  padding: 24px 0;
+  border-bottom: 1px solid #e1ece3;
+}
+
+.timeline-year {
+  color: #7ca58a;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+}
+
+.game-quote {
+  background: #edf7ef;
+  border-left: 4px solid #8ab79a;
+  padding: 22px 28px;
+  border-radius: 0 12px 12px 0;
+  color: #45634f;
+  font-size: 1.05rem;
+}
+
+.contact-panel {
+  margin-top: 35px;
+  padding: 28px;
+  background: #edf7ef;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.coming-soon {
+  margin: 60px 0 20px;
+  padding: 35px;
+  background: #f0f8f2;
+  border-radius: 18px;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .profile-highlights,
+  .skill-grid,
+  .work-preview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-item {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .contact-panel {
+    flex-direction: column;
+  }
+}
 
     "layout/forms",
 
